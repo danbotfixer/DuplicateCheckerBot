@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: duplicate-checker-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7639175753:AAGhMMKfXErWCbzl6wHoc-ulV_jt-QFez1Y
